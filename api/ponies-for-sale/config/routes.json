@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ponies-for-sales",
+      "handler": "ponies-for-sale.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ponies-for-sales/count",
+      "handler": "ponies-for-sale.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ponies-for-sales/:id",
+      "handler": "ponies-for-sale.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ponies-for-sales",
+      "handler": "ponies-for-sale.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ponies-for-sales/:id",
+      "handler": "ponies-for-sale.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ponies-for-sales/:id",
+      "handler": "ponies-for-sale.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

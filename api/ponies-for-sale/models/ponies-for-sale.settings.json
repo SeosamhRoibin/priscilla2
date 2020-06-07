@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Ponies",
+  "info": {
+    "name": "Ponies For Sale"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Cost": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "DateAdded": {
+      "type": "date"
+    },
+    "ponies_for_sales": {
+      "collection": "ponies-for-sale"
+    }
+  }
+}

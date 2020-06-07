@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_category_categories",
+  "info": {
+    "name": "Category",
+    "icon": "donate"
+  },
+  "options": {},
+  "attributes": {
+    "ponies_for_sales": {
+      "collection": "ponies-for-sale"
+    }
+  }
+}
